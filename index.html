@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="main.css">
+     <title>電卓</title>
+   </head>
+ 
+   <body>
+     <div>
+       <div class="top-line">
+         <input type="text" id="calc-display" value="0" readonly/>
+       </div> 
+       <div class="line">
+         <button value="7" onclick="clickBtn(this.value);">7</button>
+         <button value="8" onclick="clickBtn(this.value);">8</button>
+         <button value="9" onclick="clickBtn(this.value);">9</button>
+         <button value="+" onclick="clickBtn(this.value);">+</button>
+       </div> 
+       <div class="line">
+         <button value="4" onclick="clickBtn(this.value);">4</button>
+         <button value="5" onclick="clickBtn(this.value);">5</button>
+         <button value="6" onclick="clickBtn(this.value);">6</button>
+         <button value="-" onclick="clickBtn(this.value);">-</button>
+       </div> 
+       <div class="line">
+         <button value="1" onclick="clickBtn(this.value);">1</button>
+         <button value="2" onclick="clickBtn(this.value);">2</button>
+         <button value="3" onclick="clickBtn(this.value);">3</button>
+         <button value="*" onclick="clickBtn(this.value);">×</button>
+       </div> 
+       <div class="line">
+         <button value="0" onclick="clickBtn(this.value);">0</button>
+         <button value="00" onclick="clickBtn(this.value);">00</button>
+         <button value="." onclick="clickBtn(this.value);">.</button>
+         <button value="/" onclick="clickBtn(this.value);">÷</button>
+       </div>
+       <div class="bottom-line">
+         <button value="AC" onclick="allClear();">AC</button>
+         <button value="=" onclick="calc();">=</button> 
+       </div> 
+     </div>
+     <script src="main.js"></script>
+   </body>
+ </html>
